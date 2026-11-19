@@ -1,0 +1,222 @@
+var joblist = [
+  {
+    id: 1001,
+    title: "Peer Mentor",
+    company: "Student Life & Development",
+    program: "UH",
+    pay: 14,
+    category: "Student Activities",
+    daysAgo: 0,
+    location: "UH Manoa",
+    description: "Support new students through weekly check-ins and orientation events."
+  },
+  {
+    id: 1002,
+    title: "Front Desk Assistant",
+    company: "Campus Center",
+    program: "UH",
+    pay: 13.5,
+    category: "Administrative/Clerical",
+    daysAgo: 1,
+    location: "UH Manoa",
+    description: "Greet visitors, answer phones, and sort mail."
+  },
+  {
+    id: 1003,
+    title: "Library Page",
+    company: "Hamilton Library",
+    program: "FWS",
+    pay: 15.25,
+    category: "Library",
+    daysAgo: 2,
+    location: "UH Manoa",
+    description: "Shelve and retrieve materials, and help patrons find books."
+  },
+  {
+    id: 1004,
+    title: "Lab Assistant",
+    company: "Department of Biology",
+    program: "FWS",
+    pay: 16,
+    category: "Research",
+    daysAgo: 3,
+    location: "UH Manoa",
+    description: "Prepare samples, clean equipment, and log data."
+  },
+  {
+    id: 1005,
+    title: "Math Tutor",
+    company: "Learning Assistance Center",
+    program: "UH",
+    pay: 15,
+    category: "Tutoring",
+    daysAgo: 1,
+    location: "Leeward CC",
+    description: "Tutor students one-on-one in college algebra and calculus."
+  },
+  {
+    id: 1006,
+    title: "IT Help Desk Technician",
+    company: "Information Technology Services",
+    program: "UH",
+    pay: 17.5,
+    category: "Computer",
+    daysAgo: 5,
+    location: "UH Manoa",
+    description: "Resolve password, Wi-Fi, and software issues for students."
+  },
+  {
+    id: 1007,
+    title: "Recreation Aide",
+    company: "Campus Recreation",
+    program: "UH",
+    pay: 13,
+    category: "Sports/Recreation",
+    daysAgo: 8,
+    location: "UH West Oahu",
+    description: "Check IDs, set up equipment, and supervise the fitness area."
+  },
+  {
+    id: 1008,
+    title: "Social Media Assistant",
+    company: "Office of Communications",
+    program: "UH",
+    pay: 14.5,
+    category: "Communication",
+    daysAgo: 4,
+    location: "Kapiolani CC",
+    description: "Create short posts and photos for campus accounts."
+  },
+  {
+    id: 1009,
+    title: "Cafe Cashier",
+    company: "Campus Dining",
+    program: "UH",
+    pay: 13,
+    category: "Food Service",
+    daysAgo: 0,
+    location: "Honolulu CC",
+    description: "Run the register and keep the dining area clean."
+  },
+  {
+    id: 1010,
+    title: "Garden Crew Member",
+    company: "Sustainability Office",
+    program: "FWS",
+    pay: 14,
+    category: "Sustainability",
+    daysAgo: 12,
+    location: "Windward CC",
+    description: "Plant, weed, and compost at the campus garden."
+  },
+  {
+    id: 1011,
+    title: "Grounds Assistant",
+    company: "Facilities",
+    program: "UH",
+    pay: 14.25,
+    category: "Groundskeeping/Janitorial",
+    daysAgo: 20,
+    location: "UH Hilo",
+    description: "Maintain walkways, lawns, and common areas."
+  },
+  {
+    id: 1012,
+    title: "Marketing Intern",
+    company: "Admissions",
+    program: "FWS",
+    pay: 14.75,
+    category: "Marketing",
+    daysAgo: 6,
+    location: "UH Maui College",
+    description: "Help design flyers and plan recruiting events."
+  },
+  {
+    id: 1013,
+    title: "Server",
+    company: "Waikiki Beachside Grill",
+    program: "Part-Time",
+    pay: 16.5,
+    category: "Hospitality & Tourism",
+    daysAgo: 1,
+    location: "Oahu",
+    description: "Serve guests and keep tables ready. Tips are additional."
+  },
+  {
+    id: 1014,
+    title: "Junior Web Developer",
+    company: "Kona Coffee Tech",
+    program: "Intern",
+    pay: 22,
+    category: "Information Technology & Computer Science",
+    daysAgo: 2,
+    location: "Hawaii",
+    description: "Build and test pages for an online store."
+  },
+  {
+    id: 1015,
+    title: "Medical Assistant",
+    company: "Mauna Health Clinic",
+    program: "Full-Time",
+    pay: 21,
+    category: "Health Sciences",
+    daysAgo: 9,
+    location: "Maui",
+    description: "Take vitals, room patients, and update records."
+  },
+  {
+    id: 1016,
+    title: "After-School Aide",
+    company: "Kauai Kids Club",
+    program: "Part-Time",
+    pay: 15,
+    category: "Education & Training",
+    daysAgo: 3,
+    location: "Kauai",
+    description: "Supervise activities and help with homework."
+  },
+  {
+    id: 1017,
+    title: "Sales Associate",
+    company: "Aloha Surf Shop",
+    program: "Part-Time",
+    pay: 15.5,
+    category: "Marketing & Sales",
+    daysAgo: 0,
+    location: "Oahu",
+    description: "Help customers, restock, and manage the register."
+  },
+  {
+    id: 1018,
+    title: "Warehouse Clerk",
+    company: "Island Freight",
+    program: "COOP",
+    pay: 18,
+    category: "Transportation, Distribution & Logistics",
+    daysAgo: 14,
+    location: "Oahu",
+    description: "Scan and stage shipments for inter-island delivery."
+  },
+  {
+    id: 1019,
+    title: "Office Coordinator",
+    company: "Lanai Resort Group",
+    program: "Full-Time",
+    pay: 20,
+    category: "Business Management & Administration",
+    daysAgo: 7,
+    location: "Lanai",
+    description: "Schedule meetings, process invoices, and order supplies."
+  },
+  {
+    id: 1020,
+    title: "Event Staff",
+    company: "Student Life & Development",
+    program: "UH",
+    pay: 13.75,
+    category: "Student Activities",
+    daysAgo: 2,
+    location: "UH Manoa",
+    description: "Set up and run campus events, including some weekends."
+  }
+];
